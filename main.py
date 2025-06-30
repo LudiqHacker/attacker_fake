@@ -1,9 +1,14 @@
 from termcolor import colored
+import sys
 from os import system
 from random import randint
 from time import sleep
 
-system("clear")
+osName = sys.platform
+if osName == "windows":
+    system("cls")
+else:
+    system("clear")
 
 input("Press Enter to start the attack: ")
 while True:
